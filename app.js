@@ -14,17 +14,31 @@ const EXTENSION = ".com";
 */
 
 
-const crearNombreDeDominio = PRONOUN.map(function(palabra){
+function crearNombreDeDominio(arr1,arr2,arr3){
+var nombresDominio = new Array();
+var recorrePrimerArray = arr1.map(function(palabra){
   
-  return masDominio= ADJ.map(function(segundaPalabra){
+  var recorreSegundoArray= arr2.map(function(segundaPalabra){
    
-      return finDomino = NOUN.map(function(tercerPalabra){
-       
-         return palabra + segundaPalabra + tercerPalabra + EXTENSION;
-         
+      var recorreTercerArray = arr3.map(function(tercerPalabra){
+          // inserta los datos en el array "nombresDominio"
+          nombresDominio.push (palabra + segundaPalabra + tercerPalabra + EXTENSION);               
       })
   })
   
 })
+  return nombresDominio;
+}
 
-console.log(crearNombreDeDominio);
+function agregarElementosID(arr4){ 
+  var elementos ="";
+  arr4.forEach(function(data){
+    elementos = elementos + " " + data;    
+  })
+  return elementos;
+}
+  let salidaID= agregarElementosID(crearNombreDeDominio(PRONOUN, ADJ, NOUN));
+  console.log(salidaID);
+  document.getElementById("elementos").innerHTML = salidaID;
+
+//console.log(crearNombreDeDominio(PRONOUN, ADJ, NOUN));
