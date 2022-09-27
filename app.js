@@ -28,11 +28,11 @@ function crearNombreDeDominio(arr1,arr2,arr3){
 }
 
 function agregarElementosID(arr4){ 
-    var elementos ="";
+    var elementos ="<ul>";
     arr4.forEach(function(data){
-      elementos = elementos + " " + data;    
+      elementos = elementos + "<li>" + data + "</li>";    
     })
-    return elementos;
+    return elementos + "</ul>";
 }
 // salida al ID
 let salidaID= agregarElementosID(crearNombreDeDominio(PRONOUN, ADJ, NOUN));
