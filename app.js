@@ -28,9 +28,9 @@ function crearNombreDeDominio(arr1,arr2,arr3){
 }
 
 function agregarElementosID(arr4){ 
-    var elementos ="<ul>";
+    var elementos ='<ul class="list-group list-group-flush">';
     arr4.forEach(function(data){
-      elementos = elementos + "<li>" + data + "</li>";    
+      elementos = elementos + '<li class="list-group-item">' + data + '</li>';    
     })
     return elementos + "</ul>";
 }
