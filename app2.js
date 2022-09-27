@@ -16,9 +16,9 @@ const EXTENSION = ".com";
 
 const crearNombreDeDominio = PRONOUN.map(function(palabra){
   
-  return masDominio= ADJ.map(function(segundaPalabra){
+  return final =  ADJ.map(function(segundaPalabra){
    
-      return finDomino = NOUN.map(function(tercerPalabra){
+      return final =  NOUN.map(function(tercerPalabra){
        
          return palabra + segundaPalabra + tercerPalabra + EXTENSION;
          
