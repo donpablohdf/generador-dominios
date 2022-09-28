@@ -15,10 +15,10 @@ const EXTENSION = ".com";
 
 
 function crearNombreDeDominio(arr1,arr2,arr3){
-    let nombresDominio = new Array();
-    arr1.forEach(palabra => {  
-      arr2.forEach(segundaPalabra => {   
-          arr3.forEach(tercerPalabra => {
+    var nombresDominio = new Array();
+    var recorrePrimerArray = arr1.map(function(palabra){  
+      var recorreSegundoArray= arr2.map(function(segundaPalabra){   
+          var recorreTercerArray = arr3.map(function(tercerPalabra){
               // inserta los datos en el array "nombresDominio"
               nombresDominio.push (palabra + segundaPalabra + tercerPalabra + EXTENSION);               
           })
